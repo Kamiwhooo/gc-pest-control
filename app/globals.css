@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --color-olive: #2D3A1F;
+  --color-olive-dark: #1C2413;
+  --color-olive-light: #3D5229;
+  --color-tan: #C4A265;
+  --color-tan-light: #D4B580;
+  --color-cream: #F5F0E8;
+  --color-warm-white: #FAFAF7;
+  --color-charcoal: #2A2A2A;
+  --color-muted: #6B6B6B;
+  --color-border: #E5E0D8;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  color: var(--color-charcoal);
+  background: var(--color-warm-white);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up { animation: fadeUp 0.7s ease forwards; opacity: 0; }
+.animate-fade-in { animation: fadeIn 0.5s ease forwards; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border), transparent);
+  display: block;
+  margin: 0 auto;
+  max-width: 56rem;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-cream); }
+::-webkit-scrollbar-thumb { background: var(--color-tan); border-radius: 3px; }
