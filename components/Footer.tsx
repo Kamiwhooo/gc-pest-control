@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
         <hr className="border-white/10 mt-14 mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-white/40">
-          <span>2024 GC Pest Control. All rights reserved.</span>
+          <span>2026 GC Pest Control. All rights reserved.</span>
           <span>NSW Pest Control Licence #12345 - ABN 12 345 678 901</span>
         </div>
       </div>
